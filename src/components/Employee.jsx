@@ -7,12 +7,15 @@ const Employee = ({ testimonials, onRemoveTestimonial }) => {
     setTestimonialsState(testimonials);
   }, [testimonials]);
 
+  // Function to handle testimonial deletion
+
   const handleDelete = (index) => {
     const updatedTestimonials = [...testimonialsState];
     const removedTestimonial = updatedTestimonials.splice(index, 1)[0];
     onRemoveTestimonial(removedTestimonial);
     setTestimonialsState(updatedTestimonials);
   };
+  // Function to render the testimonials
 
   const renderTestimonials = () => {
     return testimonialsState.length === 0 ? (

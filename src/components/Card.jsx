@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 const Card = ({ onAddTestimonial }) => {
+  // State variables to store form input values
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");

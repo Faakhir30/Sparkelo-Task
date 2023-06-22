@@ -5,6 +5,8 @@ import Card from "./components/Card";
 import Employee from "./components/Employee";
 
 export default function App() {
+
+  //handeling testimonials
   const [testimonials, setTestimonials] = useState([]);
 
   const handleAddTestimonial = (testimonial) => {
@@ -17,6 +19,8 @@ export default function App() {
     );
     setTestimonials(updatedTestimonials);
   };
+
+
   return (
     <div className="App">
       <Header />
