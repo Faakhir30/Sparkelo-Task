@@ -1,0 +1,187 @@
+* {
+    color: #ffffff;
+  }
+  .App {
+    align-items: center;
+    max-width: 100vw !important;
+    display: flex;
+    flex-direction: column;
+  }
+  .header {
+    padding: 1vh 0 1vh 0;
+    display: flex;
+    border:0 1px 1px 1px solid #0084ff;
+      height: 7vh;
+    width: 98.5vw;
+    background: #379DFB;
+  }
+  .logo {
+      display: flex;
+  }
+  img {
+    margin-left:2vw;
+      height: 50px;
+    width: 50px;
+  }
+  .logo-text {
+    margin-top: 1vh;
+    font-size: larger;
+  }
+  .logo-text>sup{
+      font-size: xx-small;
+  }
+  .header > :last-child {
+    margin: 1vh 5vh 0 auto;
+  }
+  
+  .card {
+   padding-bottom: 30px;
+    height: 45vh;
+    width: 50vw;
+    border: 1px solid #0084ff;
+    border-radius: 10px;
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card > :first-child {
+    width: 100%;
+    height: 15%;
+    border-radius: 7px 7px 0 0;
+    font-size: medium;
+    font-weight: bold;
+    padding: 1vh 0 1vh 0;
+    background: #379DFB;
+  }
+  .card > :first-child > div {
+    margin:10px 0 10px 30px !important;
+  
+  }
+  .card-form > div > * {
+    display: flex;
+    width: 40vw;
+    margin-top: 1.5vh;
+    justify-content: flex-end;
+  }
+  .card-form > div {
+    margin-top: 4vh;
+    flex-direction: column;
+  }
+  .input-label {
+    color: black;
+    font-weight: 500;
+    margin-right: auto;
+  }
+  input {
+    color: black;
+    padding-left: 10px;
+    width: 25vw;
+    height: 4vh;
+    border: 1px solid #379DFB;
+    outline: none;
+    border-radius: 5px;
+  }
+  
+  input:focus {
+    border-color: #379DFB;
+    box-shadow: 0 0 4px #379DFB;
+  }
+  .btns>:first-child {
+      margin-top: 2vh;
+    color: grey;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  .btns>:last-child{
+      background: #379DFB;
+      text-align: center;
+      height: 4vh;
+      margin-top: 2vh;
+      min-width: 6vw;
+      border-radius: 20px;
+      border: 1px solid #0084ff;
+  }
+  .btns>:last-child:hover{
+      background: #045199;
+  }
+  .employees {
+    margin-top: 8vh;
+      min-height: 30vh;
+      width: 95.8vw;
+      background: #0084ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .employees>:first-child{
+      margin: 5vh 37vw 3vh 0;
+      font-weight: bold;
+      font-size: large;
+    }
+    .testimonial {
+      display: flex;
+      width: 50vw;
+      border-radius: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+      padding: 10px;
+      background-color: #045199;
+    }
+    
+    .testimonial-info {
+      flex-grow: 1;
+    }
+    
+    .name {
+      font-weight: bold;
+    }
+    .email , .phone{
+      margin: 5px 0 5px 3px;
+      font-size: small;
+    }
+    
+    .delete-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 1px solid #ffffff;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    .delete-button:hover{
+      color: red;
+      background: #fff;
+    }
+  
+    @media (max-width: 700px) {
+      .card{
+          width: 60vw;
+      }
+      .card-form>div>*{
+          width:50vw
+      }
+      .btns>:last-child{
+          min-width: 15vw;
+      }
+    }
+    @media (max-width: 500px) {
+      .card{
+          width: 80vw;
+      }
+      .card-form>div>*{
+          width:60vw
+      }
+      .btns>:last-child{
+          min-width: 25vw;
+      }
+    }
+  
